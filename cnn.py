@@ -78,7 +78,7 @@ y_true = np.argmax(y_test,axis = 1)
 confusion_mtx = cm(y_true, y_pred_classes)
 
 # predict results
-results = model.predict(test)
+results = classifier.predict(test)
 
 # select the indix with the maximum probability
 results = np.argmax(results,axis = 1)
